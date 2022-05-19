@@ -30,11 +30,17 @@ def create_db(dir_file_db):
             
 def create_table_visits_from_csv_file(dbcon,table_name,csv_file_path):
     data = pd.read_csv(csv_file_path)
-    data.to_sql(table_name,dbcon,if_exists="replace",index = False)
+    data.to_sql(table_name,dbcon,if_exists="replace",index = False,
+                dtype={"date": 'DateTime',
+                       "visites":'Integer'
+                       })
     
 def create_table_spots_from_csv_file(dbcon,table_name,csv_file_path):
     data = pd.read_csv(csv_file_path)
-    data.to_sql(table_name,dbcon,if_exists="replace",index = False)
+    data.to_sql(table_name,dbcon,if_exists="replace",index = False,
+                dtype={"date_diff_annoncée": 'DateTime',
+                       "tarif_net_fo":'Integer'
+                       })
     
 def create_work_db():
     create_db('data/db')

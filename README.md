@@ -2,23 +2,23 @@
 # Test de recrutement datascientist 
 
 
-#Contexte
+# Contexte
 
 Ce test a pour but de vous mettre dans un cas concret que vous pourrez rencontrer
-et voir comment vous abordez le sujet. Il n'y a pas de réponse ou méthode parfaite pour 
-les réponses. Si vous regardez les tests sur les valeurs attendues, nous avons mis des tranches 
+et voir comment vous abordez le sujet. Il n'y a pas de réponse ou méthode parfaite.
+Si vous regardez les tests sur les valeurs attendues, nous avons mis des tranches 
 assez larges. Ce test n'est pas éliminatoire
 
-L'idée est d'évaluer vos capacités sur les points suivant:
+L'idée est d'évaluer vos capacités sur les points suivants:
 - analyse d'un problème et compréhension des objectifs 
 - maitrise de python
 - maitrise des bases de SQL
 - manipulation de données en python
 - force de proposition d'une solution à un problème data
 
-#Description du cas
-Imaginons qu'un site de ecommerce diffuse des spots tv lors de campagne publicitaire.
-Ce site commande un certain nombre de spots à un prix donné à un annonceur qui gère les achats
+# Description du cas
+Imaginons qu'un site de ecommerce diffuse des spots tv lors d'une campagne publicitaire.
+Ce site commande un certain nombre de spots à un annonceur (à un prix donné) qui gère les achats
 auprès des chaînes de télé.
 Une fois la campagne passée, l'annonceur communique au site les heures de diffusion des spots.
 Ainsi, en comparant ces heures avec les pics de trafic sur sa page web, le site de
@@ -27,7 +27,7 @@ la rentabilité du spots (nombre de visites/prix du spot).
 Les horaires de diffusion communiqués ne sont pas très précis et il faut procéder à
 un recalage de l'horaire du spot par rapport au pic des visites observées sur le site.
 
-#objectifs
+# objectifs
 
 Votre tâche sera de mesurer l'impact de chaque spot sur le nombre de visiteurs supplémentaires
 induits (l'incrément) à 5 ou 10 min après le spot.
@@ -39,7 +39,7 @@ pour chaque spot, à 5 ou 10 min selon la méthode que vous jugerez la plus pert
 Ensuite il faudra définir la fonction src.impact_analysis.compute_campaign_stats dont le rôle est de resumer
 les performances de la campagne (nombre de spots, cout total, incrément total à 5 /10 min et cout par visite supplémentaire)
 
-Et pour terminez vous ferez le fichier qui execute ces deux fonctions dans ./analysis.py qui sort
+Et pour terminez vous ferez le fichier qui execute ces deux fonctions dans ./analysis.py et sort
 ces deux petits dataframe. Vous les collerez dans un excel que vous commenterez avec une ou deux phrases.
 
 #Pour aller plus loin 
@@ -48,19 +48,21 @@ mesurée. Selon vous, que pourrait-il faire de ces données et comment, pour am�
 Ecrivez quelques lignes sur comment vous feriez.
 
 
-##LE PROJET
+## LE PROJET
 
-#Description des données
+# Description des données
 
 Le projet vient avec des scripts créant une base de données sqlite à partir de deux fichiers csv:
 - too_spots_infos: infos des spots avec la date de diffusion et son prix
 - visites_minutes: contient les visites par minute sur le site dans un lapse de temps 
 autour de chaque spot disponible dans too_spots_infos.
 
+La base de données contient donc deux table. Une avec les horaires de diffusion annoncée des spots et leur prix.
+L'autre table contient les visites. 
 
 Voici un exemple visuel de l'effet d'un spot sur les visites du site.
 
-#Test unitaires
+# Test unitaires
 
 Il y a un sous dossier test/test_unit qui permet de tester vos fonctions pour vous 
 assurer qu'elles renvoient le bon format de résultat. Comme nous n'attenonds pas
@@ -75,7 +77,7 @@ Vous pouvez éxecuter les test avec la commande:
 python -m pytest test/test_unit/test_impact_analysis.py
 ```
 
-#Installation
+# Installation
 - Clonez le repository dans un dossier de votre choix
 
 Il y a un fichier Makefile pour faciliter le déploiement avec les commandes suivantes à faire dans l'ordre.

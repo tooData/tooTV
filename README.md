@@ -27,7 +27,7 @@ la rentabilité du spots (nombre de visites/prix du spot).
 Les horaires de diffusion communiqués ne sont pas très précis et il faut procéder à
 un recalage de l'horaire du spot par rapport au pic des visites observées sur le site.
 
-# objectifs
+# Objectifs
 
 Votre tâche sera de mesurer l'impact de chaque spot sur le nombre de visiteurs supplémentaires
 induits (l'incrément) à 5 ou 10 min après le spot.
@@ -42,7 +42,7 @@ les performances de la campagne (nombre de spots, cout total, incrément total �
 Et pour terminez vous ferez le fichier qui execute ces deux fonctions dans ./analysis.py et sort
 ces deux petits dataframe. Vous les collerez dans un excel que vous commenterez avec une ou deux phrases.
 
-#Pour aller plus loin 
+# Pour aller plus loin 
 Imaginons que ce site de ecommerce dispose d'un historique de milliers de spots avec leur efficacité
 mesurée. Selon vous, que pourrait-il faire de ces données et comment, pour améliorer les campagnes suivantes.
 Ecrivez quelques lignes sur comment vous feriez.
@@ -61,6 +61,9 @@ La base de données contient donc deux table. Une avec les horaires de diffusion
 L'autre table contient les visites. 
 
 Voici un exemple visuel de l'effet d'un spot sur les visites du site.
+
+
+![Exemple visuel d'impact de spot](https://github.com/tooData/tooTV/blob/main/docs/tv.png?raw=true)
 
 # Test unitaires
 
@@ -81,8 +84,8 @@ python -m pytest test/test_unit/test_impact_analysis.py
 - Clonez le repository dans un dossier de votre choix
 
 Il y a un fichier Makefile pour faciliter le déploiement avec les commandes suivantes à faire dans l'ordre.
-Vous pouvez aussi faire les actions lister dans le Makefile à la main si vous n'arrivez pas à
-executer le makefile
+Vous pouvez aussi faire les actions listées dans le Makefile à la main si vous n'arrivez pas à
+éxecuter le makefile
 
 - Créez l'environnement de développement python dédié à ce projet avec :
 (il vous faudra installer virtualenv)

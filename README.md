@@ -39,7 +39,7 @@ pour chaque spot, à 5 ou 10 min selon la méthode que vous jugerez la plus pert
 Ensuite il faudra définir la fonction src.impact_analysis.compute_campaign_stats dont le rôle est de resumer
 les performances de la campagne (nombre de spots, cout total, incrément total à 5 /10 min et cout par visite supplémentaire)
 
-Et pour terminez vous ferez le fichier qui execute ces deux fonctions dans ./analysis.py et sort
+Et pour terminer vous ferez le fichier qui execute ces deux fonctions dans ./analysis.py et sort
 ces deux petits dataframe. Vous les collerez dans un excel que vous commenterez avec une ou deux phrases.
 
 # Pour aller plus loin 

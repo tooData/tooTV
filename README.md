@@ -42,7 +42,7 @@ les performances de la campagne (nombre de spots, cout total, incrément total �
 Et pour terminer vous ferez le fichier qui execute ces deux fonctions dans ./analysis.py et sort
 ces deux petits dataframe. Vous les collerez dans un excel que vous commenterez avec une ou deux phrases.
 
-# Pour aller plus loin 
+# BONUS: Pour aller plus loin 
 Imaginons que ce site de ecommerce dispose d'un historique de milliers de spots avec leur efficacité
 mesurée. Selon vous, que pourrait-il faire de ces données et comment, pour améliorer les campagnes suivantes.
 Ecrivez quelques lignes sur comment vous feriez.

@@ -27,7 +27,7 @@ la rentabilité du spots (nombre de visites/prix du spot).
 Les horaires de diffusion communiqués ne sont pas très précis et il faut procéder à
 un recalage de l'horaire du spot par rapport au pic des visites observées sur le site.
 
-# Objectifs
+# Objectifs à réaliser (vos tâches)
 
 Votre tâche sera de mesurer l'impact de chaque spot sur le nombre de visiteurs supplémentaires
 induits (l'incrément) à 5 ou 10 min après le spot.
